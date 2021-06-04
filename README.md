@@ -18,7 +18,7 @@ git clone https://github.com/ahmedwab/MMM-TranslatedMessages
 
 ## Retrieving a Google API KEY
 
-	1. Go to the following website https://cloud.google.com/translate</li>
+	1. Go to the following website https://cloud.google.com/translate
 	2. You will want to create a new project
 	3. With the new project, visit API & Services
 	4. Enable Google Translate API
@@ -38,10 +38,9 @@ modules: [
 				intervalTime: 5, //Time interval between messages
 				fade: 3, //Time in Seconds it takes to fade away each message
 				Messages:[ //Messages you want to input to be translated
-					"Hello World","What is up" , "How is it going", "Nice Weather Today"
-				],
+					"Hello World","How is it going"],
 				API_KEY:"GOOGLE_TRANSLATE_API_KEY", //Google translation API Key
-				targetLanguage:"fr",	 //Target Language Ex: fr for French
+				targetLanguages:["fr","en"], //Target Languages Example: French:fr English:en
 				fontSize: "1.1em" //Font Size of the text
 			}
 		},
@@ -75,12 +74,12 @@ set it to only use one category. Specifying multiple categories is curently not 
 			<td><code>Messages</code></td>
 			<td>Messages to be translated <strong>(Array type)</strong></td>
 			<td><code> Messages:[ 
-					"Hello World","What is up" , "How is it going", "Nice Weather Today"</code>  </td>
+					"Hello World","What is up" , "How is it going", "Nice Weather Today"]</code>  </td>
 		</tr>
 		<tr>
-			<td><code>targetLanguage</code></td>
-			<td>Language the messages should be translated to<strong>Example: French = fr</strong></td>
-			<td><code> "en"</code>  </td>
+			<td><code>targetLanguages</code></td>
+			<td>Languages the messages should be translated to<strong>Example: French = fr</strong></td>
+			<td><code> targetLanguages:["fr","en"]</code>  </td>
 		</tr>
 		<tr>
 			<td><code>fontSize</code></td>

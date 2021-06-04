@@ -15,7 +15,7 @@ Module.register("MMM-TranslatedMessages",{
 		Messages:[
 			"Hello World","What is up" , "How is it going", "Sample Message"
 		],
-		targetLanguage:"en",	 //Target Language Ex: fr for French
+		targetLanguages:["en","fr","ar"],	 //Target Language Ex: fr for French
 		fontSize: "1.1em" //Font Size of the text		
 		
 	},
@@ -55,8 +55,15 @@ Module.register("MMM-TranslatedMessages",{
 
 		translate.engine = "google";
 		translate.key = this.config.API_KEY;
-		const translatedText = await translate(text, this.config.targetLanguage);
-		return translatedText;
+		var i;
+		var objLanguages = this.config.targetLanguages;
+		var objLanguagesLength = objLanguages.length;
+		this.objLanguagesMessages="";
+		for (i=0;i<objLanguagesLength;i++){
+			const translatedText = await translate(text, objLanguages[i]);
+			this.objLanguagesMessages += translatedText;
+		}
+		return this.objLanguagesMessages;
 		
 	},
 
