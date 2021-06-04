@@ -13,7 +13,7 @@ cd ~/MagicMirror/modules/
 ```
 Clone this repository in the modules folder
 ```sh
-git clone https://github.com/ahmedwab/random_quotes
+git clone https://github.com/ahmedwab/MMM-TranslatedMessages
 ```
 
 ## Retrieving a Google API KEY
