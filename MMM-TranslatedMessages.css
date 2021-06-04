@@ -1,0 +1,18 @@
+/*
+
+You can Customize the CSS file as you please
+
+If you would like to select a different colour, you can change the colour attribute to a hexadeciaml or rgb
+
+*/
+
+.translatedText{
+    font-family: Tahoma;
+    color:white;
+	text-align:center;
+    padding:20px;
+
+}
+
+
+
