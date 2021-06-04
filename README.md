@@ -74,11 +74,11 @@ set it to only use one category. Specifying multiple categories is curently not 
 			<td><code>Messages</code></td>
 			<td>Messages to be translated <strong>(Array type)</strong></td>
 			<td><code> Messages:[ 
-					"Hello World","What is up" , "How is it going", "Nice Weather Today"]</code>  </td>
+					"Hello World","How is it going"]</code>  </td>
 		</tr>
 		<tr>
 			<td><code>targetLanguages</code></td>
-			<td>Languages the messages should be translated to<strong>Example: French = fr</strong></td>
+			<td>Languages the messages should be translated to<strong> Example: French = fr</strong></td>
 			<td><code> targetLanguages:["fr","en"]</code>  </td>
 		</tr>
 		<tr>
