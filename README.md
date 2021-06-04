@@ -11,41 +11,40 @@ Access your Magic Mirror/modules folder
 cd ~/MagicMirror/modules/
 
 ```
-CLone this repository in the modules folder
+Clone this repository in the modules folder
 ```sh
 git clone https://github.com/ahmedwab/random_quotes
 ```
 
 ## Retrieving a Google API KEY
 
-	<ol>
-		<li>Go to the following website https://cloud.google.com/translate</li>
-		<li>You will want to create a new project</li>
-		<li>With the new project, visit API & Services</li>
-		<li>Enable Google Translate API</li>
-		<li>Create a new API key</li>
-		<li> Store/Copy your API key for the next part </li>
-	</ol>
+	1. Go to the following website https://cloud.google.com/translate</li>
+	2. You will want to create a new project
+	3. With the new project, visit API & Services
+	4. Enable Google Translate API
+	5. Create a new API key
+	6. Store/Copy your API key for the next part 
+	
 
 
 ## Using the module
 You will need to make adjustments in your  `config/config.js` file:
 ````javascript
 modules: [
-			{
-				module: 'MMM-TranslatedMessages',
-				position: 'top_right',
-				config: {
-					intervalTime: 5, //Time interval between messages
-					fade: 3, //Time in Seconds it takes to fade away each message
-					Messages:[ //Messages you want to input to be translated
-						"Hello World","What is up" , "How is it going", "Nice Weather Today"
-					],
-					API_KEY:"GOOGLE_TRANSLATE_API_KEY", //Google translation API Key
-					targetLanguage:"fr",	 //Target Language Ex: fr for French
-					fontSize: "1.1em" //Font Size of the text
-				}
+		{
+			module: 'MMM-TranslatedMessages',
+			position: 'top_right',
+			config: {
+				intervalTime: 5, //Time interval between messages
+				fade: 3, //Time in Seconds it takes to fade away each message
+				Messages:[ //Messages you want to input to be translated
+					"Hello World","What is up" , "How is it going", "Nice Weather Today"
+				],
+				API_KEY:"GOOGLE_TRANSLATE_API_KEY", //Google translation API Key
+				targetLanguage:"fr",	 //Target Language Ex: fr for French
+				fontSize: "1.1em" //Font Size of the text
 			}
+		},
 ]
 ````
 
@@ -75,8 +74,8 @@ set it to only use one category. Specifying multiple categories is curently not 
 		<tr>
 			<td><code>Messages</code></td>
 			<td>Messages to be translated <strong>(Array type)</strong></td>
-			<td><code> Messages:[ //Messages you want to input to be translated
-						"Hello World","What is up" , "How is it going", "Nice Weather Today"</code>  </td>
+			<td><code> Messages:[ 
+					"Hello World","What is up" , "How is it going", "Nice Weather Today"</code>  </td>
 		</tr>
 		<tr>
 			<td><code>targetLanguage</code></td>
