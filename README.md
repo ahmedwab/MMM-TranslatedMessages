@@ -1,5 +1,9 @@
 # Module: MMM-TranslatedMessages
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
 The `MMM-TranslatedMessages` module translates a given list of messages that the user inputs to the desired language that is configured.
 
 <img src="images/screenshot.png" alt="Display">
@@ -25,6 +29,7 @@ git clone https://github.com/ahmedwab/MMM-TranslatedMessages
 	5. Create a new API key
 	6. Store/Copy your API key for the next part 
 	
+
 
 
 ## Using the module
